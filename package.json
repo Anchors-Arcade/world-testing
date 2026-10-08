@@ -1,0 +1,15 @@
+{
+  "name": "anchors-world",
+  "private": true,
+  "version": "0.17.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node scripts/test-rules.mjs && node scripts/test-phase6.mjs && node scripts/test-social.mjs && node scripts/test-phase7.mjs && node scripts/test-phase8.mjs",
+    "test:pages": "npm run build && node scripts/test-pages-build.mjs"
+  },
+  "dependencies": { "@supabase/supabase-js": "^2.45.0", "phaser": "3.80.1" },
+  "devDependencies": { "vite": "^5.4.0" }
+}
